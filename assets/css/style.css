@@ -74,6 +74,11 @@
         border: solid 5px aqua;
         border-radius: 5px;
         padding: 5px;
+        transition: 1s;
+    }
+
+    .navegacion ul li:hover{
+        background-color: blue;
     }
     
     .boxconsulta{
