@@ -121,6 +121,11 @@
         border-radius: 5px;
         padding: 5px;
         margin-right: 15px;
+        transition: 1s;
+    }
+
+    .listavehiculos ul li:hover{
+        background-color: blue;
     }
     
     .boxpreguntas { 
