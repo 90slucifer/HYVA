@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Bebas Neue', cursive;
 }
-@media (min-width:480px){
+@media (min-width:320px){
     body {
         background-color: grey;
         display: grid;
@@ -35,9 +35,8 @@
         height: 100px;
         color: antiquewhite;
         background-color: blue;
-        border-top: solid 5px aqua;
-        border-bottom: solid 5px aqua;
-        border-radius: 5px;
+        border-top: solid 1px aqua;
+        border-bottom: solid 1px aqua;
         align-items: center;
     }
     .cabeza h1{
@@ -48,42 +47,20 @@
         display: none;
     }
     
-    .navegacion {
-        position: sticky;
-        top: 0px;
-        width: 100%;
-        height: 45px;
-        color: antiquewhite;
-        background-color: blue;
-        border-top: solid 5px aqua;
-        border-bottom: solid 5px aqua;
-        border-radius: 5px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        
+    .navegacion{
+        border-top: solid 1px aqua;
+        border-bottom: solid 1px aqua;
     }
-    
+
     ul{
         list-style: none;
     }
-    
-    .navegacion ul li {
-        display: inline-block;
-        background-color: grey;
-        border: solid 5px aqua;
-        border-radius: 5px;
-        padding: 5px;
-        transition: 1s;
-    }
 
-    .navegacion ul li:hover{
-        background-color: blue;
-    }
-    
     .boxconsulta{
         display: flex;
         flex-direction: column;
+        border-top: solid 1px aqua;
+        border-bottom: solid 1px aqua;
         padding: 15px;
     }
     
@@ -91,8 +68,8 @@
         display: flex;
         color: antiquewhite;
         background-color: blue;
-        border: solid 5px aqua;
-        border-radius: 5px;
+        border-top: solid 1px aqua;
+        border-bottom: solid 1px aqua;
         padding-bottom: 15px;
         text-align: center;
         justify-content: center;
@@ -107,9 +84,8 @@
         height: 45px;
         color: antiquewhite;
         background-color: blue;
-        border-top: solid 5px aqua;
-        border-bottom: solid 5px aqua;
-        border-radius: 5px;
+        border-top: solid 1px aqua;
+        border-bottom: solid 1px aqua;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -117,8 +93,6 @@
     .listavehiculos ul li{
         display: inline-block;
         background-color: grey;
-        border: solid 5px aqua;
-        border-radius: 5px;
         padding: 5px;
         margin-right: 15px;
         transition: 1s;
@@ -130,22 +104,22 @@
     
     .boxpreguntas { 
         display: flex;
+        border-top: solid 1px aqua;
+        border-bottom: solid 1px aqua;
     }
     
     .busqueda{
         color: antiquewhite;
         background-color: blue;
-        border: solid 5px aqua;
-        border-radius: 5px;
-        
+        border-top: solid 1px aqua;
+        border-bottom: solid 1px aqua;
     }
     
     .pie{
         color: antiquewhite;
         background-color: blue;
-        border-top: solid 5px aqua;
-        border-bottom: solid 5px aqua;
-        border-radius: 5px;
+        border-top: solid 1px aqua;
+        border-bottom: solid 1px aqua;
         padding-left: 15px;
         text-align: right;
     }
@@ -191,9 +165,8 @@ a{
     height: 100px;
     color: antiquewhite;
     background-color: blue;
-    border-top: solid 5px aqua;
-    border-bottom: solid 5px aqua;
-    border-radius: 5px;
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
     align-items: center;
 }
 .cabeza h1{
@@ -206,37 +179,20 @@ a{
     width: 700px;
 }
 
-.navegacion {
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    height: 45px;
-    color: antiquewhite;
-    background-color: blue;
-    border-top: solid 5px aqua;
-    border-bottom: solid 5px aqua;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
+.navegacion{
+        border-top: solid 1px aqua;
+        border-bottom: solid 1px aqua;
+    }
 
 ul{
     list-style: none;
 }
 
-.navegacion ul li {
-    display: inline-block;
-    background-color: grey;
-    border: solid 5px aqua;
-    border-radius: 5px;
-    padding: 5px;
-}
-
 .boxconsulta{
     display: flex;
     flex-direction: column;
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
     padding: 15px;
 }
 
@@ -244,9 +200,8 @@ ul{
     display: flex;
     color: antiquewhite;
     background-color: blue;
-    border: solid 5px aqua;
-    border-radius: 5px;
-    padding-bottom: 15px;
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
     text-align: center;
     justify-content: center;
     flex-direction: column;
@@ -263,9 +218,8 @@ ul{
     height: 45px;
     color: antiquewhite;
     background-color: blue;
-    border-top: solid 5px aqua;
-    border-bottom: solid 5px aqua;
-    border-radius: 5px;
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -273,8 +227,6 @@ ul{
 .listavehiculos ul li{
     display: inline-block;
     background-color: grey;
-    border: solid 5px aqua;
-    border-radius: 5px;
     padding: 5px;
     margin-right: 15px;
 }
@@ -286,17 +238,15 @@ ul{
 .busqueda{
     color: antiquewhite;
     background-color: blue;
-    border: solid 5px aqua;
-    border-radius: 5px;
-    
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
 }
 
 .pie{
     color: antiquewhite;
     background-color: blue;
-    border-top: solid 5px aqua;
-    border-bottom: solid 5px aqua;
-    border-radius: 5px;
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
     padding-left: 15px;
     text-align: right;
 }
