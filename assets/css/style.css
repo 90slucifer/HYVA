@@ -1,218 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Bebas Neue', cursive;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', cursive;
 }
-@media (min-width:320px){
-    body {
-        background-color: grey;
-        display: grid;
-        grid-template-areas:
-                            "header header header"
-                            "nav nav nav"
-                            "main main main"
-                            "footer footer footer";
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr 1fr;
-        row-gap: 5px;
-        column-gap: 5px;
-    }
-    header{
-        grid-area: header;
-    }
-    nav{
-        grid-area: nav;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
-    .cabeza { 
-        display: flex;
-        justify-content:space-around;
-        height: 100px;
-        color: antiquewhite;
-        background-color: blue;
-        border-top: solid 1px aqua;
-        border-bottom: solid 1px aqua;
-        align-items: center;
-    }
-    .cabeza h1{
-        align-items: stretch;
-        font-size: 40px;
-    }
-    .cabeza img{
-        display: none;
-    }
-    
-    .navegacion{
-        border-top: solid 1px aqua;
-        border-bottom: solid 1px aqua;
-    }
 
-    ul{
-        list-style: none;
-    }
-
-    .boxconsulta{
-        display: flex;
-        flex-direction: column;
-        border-top: solid 1px aqua;
-        border-bottom: solid 1px aqua;
-        padding: 15px;
-    }
-    
-    .boxprincipal {
-        display: flex;
-        color: antiquewhite;
-        background-color: blue;
-        border-top: solid 1px aqua;
-        border-bottom: solid 1px aqua;
-        padding-bottom: 15px;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    
-    .listavehiculos{
-        position: sticky;
-        top: 0px;
-        width: 100%;
-        height: 45px;
-        color: antiquewhite;
-        background-color: blue;
-        border-top: solid 1px aqua;
-        border-bottom: solid 1px aqua;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .listavehiculos ul li{
-        display: inline-block;
-        background-color: grey;
-        padding: 5px;
-        margin-right: 15px;
-        transition: 1s;
-    }
-
-    .listavehiculos ul li:hover{
-        background-color: blue;
-    }
-    
-    .boxpreguntas { 
-        display: flex;
-        border-top: solid 1px aqua;
-        border-bottom: solid 1px aqua;
-    }
-    
-    .busqueda{
-        color: antiquewhite;
-        background-color: blue;
-        border-top: solid 1px aqua;
-        border-bottom: solid 1px aqua;
-    }
-    
-    .pie{
-        color: antiquewhite;
-        background-color: blue;
-        border-top: solid 1px aqua;
-        border-bottom: solid 1px aqua;
-        padding-left: 15px;
-        text-align: right;
-    }
-}
-@media (min-width:720px){
-body {
+@media (min-width: 320px) {
+  body {
     background-color: grey;
+    display: -ms-grid;
     display: grid;
-    grid-template-areas:
-                        "header header header"
-                        "nav nav nav"
-                        "main main aside"
-                        "footer footer footer";
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     row-gap: 5px;
-    column-gap: 5px;
-}
-header{
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: header;
-}
-nav{
+  }
+  nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: nav;
-}
-main{
+  }
+  main {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: main;
-}
-aside{
-    grid-area: aside;
-}
-footer{
+  }
+  footer {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: footer;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-
-.cabeza { 
+  }
+  .cabeza {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 100px;
     color: antiquewhite;
     background-color: blue;
     border-top: solid 1px aqua;
     border-bottom: solid 1px aqua;
-    align-items: center;
-}
-.cabeza h1{
-    align-items: stretch;
-    font-size: 50px;
-}
-.cabeza img{
-    align-items: stretch;
-    height: 100px;
-    width: 700px;
-}
-
-.navegacion{
-        border-top: solid 1px aqua;
-        border-bottom: solid 1px aqua;
-    }
-
-ul{
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cabeza h1 {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    font-size: 40px;
+  }
+  .cabeza h1 img {
+    display: none;
+  }
+  .navegacion {
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
+  }
+  ul {
     list-style: none;
-}
-
-.boxconsulta{
+  }
+  .boxconsulta {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-top: solid 1px aqua;
     border-bottom: solid 1px aqua;
     padding: 15px;
-}
-
-.boxprincipal {
+  }
+  .boxprincipal {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: antiquewhite;
     background-color: blue;
     border-top: solid 1px aqua;
     border-bottom: solid 1px aqua;
+    padding-bottom: 15px;
     text-align: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.boxprincipal iframe{
-    height: 500px;
-}
-
-.listavehiculos{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  aside {
+    display: none;
+  }
+  .listavehiculos {
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     width: 100%;
@@ -221,34 +116,211 @@ ul{
     background-color: blue;
     border-top: solid 1px aqua;
     border-bottom: solid 1px aqua;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.listavehiculos ul li{
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .listavehiculos ul li {
     display: inline-block;
     background-color: grey;
     padding: 5px;
     margin-right: 15px;
-}
-
-.boxpreguntas { 
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .listavehiculos ul li li:hover {
+    background-color: blue;
+  }
+  .boxpreguntas {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-}
-
-.busqueda{
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
+  }
+  .busqueda {
     color: antiquewhite;
     background-color: blue;
     border-top: solid 1px aqua;
     border-bottom: solid 1px aqua;
-}
-
-.pie{
+  }
+  .pie {
     color: antiquewhite;
     background-color: blue;
     border-top: solid 1px aqua;
     border-bottom: solid 1px aqua;
     padding-left: 15px;
     text-align: right;
+  }
 }
+
+@media (min-width: 720px) {
+  body {
+    background-color: grey;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer";
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5px;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: header;
+  }
+  nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: nav;
+  }
+  main {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: main;
+  }
+  aside {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: aside;
+  }
+  footer {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .cabeza {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100px;
+    color: antiquewhite;
+    background-color: blue;
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cabeza h1 {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    font-size: 50px;
+  }
+  .cabeza img {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    height: 100px;
+    width: 700px;
+  }
+  .navegacion {
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
+  }
+  ul {
+    list-style: none;
+  }
+  aside {
+    display: block;
+  }
+  .boxconsulta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
+    padding: 15px;
+  }
+  .boxprincipal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: antiquewhite;
+    background-color: blue;
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .boxprincipal iframe {
+    height: 500px;
+  }
+  .listavehiculos {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 45px;
+    color: antiquewhite;
+    background-color: blue;
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .listavehiculos ul li {
+    display: inline-block;
+    background-color: grey;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  .boxpreguntas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .busqueda {
+    color: antiquewhite;
+    background-color: blue;
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
+  }
+  .pie {
+    color: antiquewhite;
+    background-color: blue;
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
+    padding-left: 15px;
+    text-align: right;
+  }
 }
+/*# sourceMappingURL=style.css.map */
