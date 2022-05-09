@@ -1,3 +1,7 @@
-$color-principal: blue;
-$color-secundario: aqua;
+$color-principal: rgb(0, 0, 48);
+$color-secundario: rgb(141, 219, 219);
 $color-fondo: grey;
+$borde: (
+    alto: solid 1px $color-secundario,
+    bajo: solid 1px $color-secundario
+)

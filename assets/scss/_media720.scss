@@ -32,16 +32,18 @@
         text-decoration: none;
         color: white;
     }
-    
+    @mixin porpiedadesPrincipales($bg-color,$color-letra,$borde-alto,$borde-bajo) {
+        background-color: $bg-color;
+        color: $color-letra;
+        border-top: $borde-alto;
+        border-bottom: $borde-bajo;
+    }
     
     .cabeza { 
+        @include porpiedadesPrincipales($color-principal, antiquewhite, map-get($borde, alto),map-get($borde, bajo));
         display: flex;
         justify-content:space-around;
         height: 100px;
-        color: antiquewhite;
-        background-color: $color-principal;
-        border-top: solid 1px $color-secundario;
-        border-bottom: solid 1px $color-secundario;
         align-items: center;
         h1{
             align-items: stretch;
@@ -69,8 +71,7 @@
     .boxconsulta{
         display: flex;
         flex-direction: column;
-        border-top: solid 1px $color-secundario;
-        border-bottom: solid 1px $color-secundario;
+        @extend .navegacion;
         padding: 15px;
     }
     
@@ -78,8 +79,7 @@
         display: flex;
         color: antiquewhite;
         background-color: $color-principal;
-        border-top: solid 1px $color-secundario;
-        border-bottom: solid 1px $color-secundario;
+        @extend .navegacion;
         text-align: center;
         justify-content: center;
         flex-direction: column;
@@ -95,8 +95,7 @@
         height: 45px;
         color: antiquewhite;
         background-color: $color-principal;
-        border-top: solid 1px $color-secundario;
-        border-bottom: solid 1px $color-secundario;
+        @extend .navegacion;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -113,17 +112,20 @@
     }
     
     .busqueda{
+        display: flex;
+        flex-direction: column;
         color: antiquewhite;
         background-color: $color-principal;
-        border-top: solid 1px $color-secundario;
-        border-bottom: solid 1px $color-secundario;
+        @extend .navegacion;
+        p{
+            text-align: center;
+        }
     }
     
     .pie{
         color: antiquewhite;
         background-color: $color-principal;
-        border-top: solid 1px $color-secundario;
-        border-bottom: solid 1px $color-secundario;
+        @extend .navegacion;
         padding-left: 15px;
         text-align: right;
     }
