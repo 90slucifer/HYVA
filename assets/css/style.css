@@ -9,7 +9,10 @@
     background-color: grey;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+        grid-template-areas: "header header header"
+ "nav nav nav"
+ "main main main"
+ "footer footer footer";
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     -ms-grid-columns: 1fr 1fr 1fr;
@@ -165,7 +168,10 @@
     background-color: grey;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer";
+        grid-template-areas: "header header header"
+ "nav nav nav"
+ "main main aside"
+ "footer footer footer";
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     -ms-grid-columns: 1fr 1fr 1fr;
@@ -320,13 +326,25 @@
     background-color: #000030;
     border-top: solid 1px #8ddbdb;
     border-bottom: solid 1px #8ddbdb;
+    align-items: center;
   }
   .busqueda img {
     max-width: 200px;
     max-height: 200px;
   }
+  .busqueda h3{
+    margin-top: 15px;
+  }
   .busqueda p {
     text-align: center;
+  }
+  .autos{
+    color: antiquewhite;
+    background-color: #000030;
+    border: solid 1px #8ddbdb;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 3px 3px 3px black;
   }
   .pie {
     color: antiquewhite;
